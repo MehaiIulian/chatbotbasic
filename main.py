@@ -2,7 +2,6 @@ import json
 import pickle
 import random
 from os.path import isfile
-import requests
 import nltk
 import numpy
 import tflearn
