@@ -3,6 +3,7 @@ import pickle
 import random
 from os.path import isfile
 import nltk
+nltk.download('punkt')
 import numpy
 import tflearn
 from nltk.stem import LancasterStemmer
