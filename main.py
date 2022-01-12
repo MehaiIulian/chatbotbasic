@@ -1,13 +1,14 @@
 import json
 import pickle
 import random
-from os.path import isfile
+import os
 import nltk
 nltk.download('punkt')
 import numpy
 import tflearn
 from nltk.stem import LancasterStemmer
 import tensorflow as tf
+
 
 stemmer = LancasterStemmer()
 
@@ -91,7 +92,7 @@ model = tflearn.DNN(net)
 
 # If model has already been fitted, load the model
 # Otherwise: fit the model --> pass all of training data
-if isfile("model.tflearn"):
+if os.path.exists('./model.tflearn.data-00000-of-00001'):
     model.load("model.tflearn")
 
 else:
